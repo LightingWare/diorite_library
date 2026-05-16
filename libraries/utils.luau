@@ -49,7 +49,7 @@ function lib:GetEnvironment()
         if _RunService:IsStudio() then
             get = "Studio"
         else
-            if identifyexecutor and identifyexecutor() then
+            if identifyexecutor then
                 get = identifyexecutor()
             end
         end
